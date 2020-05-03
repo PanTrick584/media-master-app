@@ -3,6 +3,7 @@
 :root{
     --gray-menu: #a3a3a2;
     --yellow-color: #d9ab07;
+    --big-font-size: 3rem;
 }
 
 *{
@@ -101,7 +102,7 @@ main {
     display: flex;
     flex-direction: column;
 }
-/* SECTION #1 */
+/* SECTION SALES */
 
 .sales h1 ul{
     display: flex;
@@ -131,24 +132,22 @@ main {
     color: var(--yellow-color);
 }
 
-
-
-/* MAIN MENU */
+/*MENU */
 
 /* Main div in section */
-.main-div {
+.menu-div {
     display: flex;
     flex-direction: row;
 }
 
-/* Rendered menu with products section */
-.main-menu {
+/* Rendered menu */
+.menu {
     padding: 10px 40px;
     background-color: var(--yellow-color);
     margin: 20px;
 }
 
-.main-menu li{
+.menu li{
     cursor: pointer;
     list-style-type: none;
     padding: 5px 40px;
@@ -156,18 +155,17 @@ main {
     border-top: 1px solid var(--gray-menu);
 }
 
-.main-menu li:hover{
+.menu li:hover{
     background: var(--gray-menu);
 }
 
-.main-menu li:first-of-type{
+.menu li:first-of-type{
     border-top: none;
 }
 
-.main-picture {
+.menu-picture {
     width: 100%;
     margin: 20px 40px;
-   
 }
 
 /* Picture */
@@ -175,10 +173,12 @@ main {
     /* background-color: var(--gray-menu); */
     background-image: linear-gradient(to right,rgba(255,255,255,1), rgba(255,255,255,0)), url('https://cdn.pixabay.com/photo/2019/09/09/08/23/internet-4463031_1280.jpg');
     height: 90%;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 /* Menu under picture */
-.main-picture h2 ul {
+.menu-picture h2 ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -186,13 +186,16 @@ main {
     padding: 10px 0;
 }
 
-.main-picture h2 ul li{
+.menu-picture h2 ul li{
     cursor: pointer;
     list-style-type: none;
     font-size: 1rem;
     padding: 0 20px;
     color: #fff;
     border-left: 1px solid #fff;
+}
+.menu-picture h2 ul li:hover{
+    color: var(--yellow-color);
 }
 
 .main-picture h2 ul li:first-of-type{
@@ -206,8 +209,8 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--gray-menu);
     height: 250px;
+    margin: 0 20px;
 }
 
 .recommendedItem{
@@ -323,3 +326,59 @@ main {
     width: 100%;
     height: 100%;
 }
+
+.offersInfoBtn{
+    cursor: pointer;
+    border: 1px solid var(--gray-menu);
+    padding: 5px;
+}
+
+.offersInfoBtn:hover{
+    background-color: var(--yellow-color);
+}
+
+/* FOOTER */
+
+ /* Submit */
+
+ .submit-section {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     height: 200px;
+     background-color: var(--gray-menu);
+ }
+
+ .icon-submit{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     width: 50%;
+ }
+
+ .input-submit{
+     width: 50%;
+ }
+
+ /* info list */
+
+ .footer-info{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     margin: 20px;
+     font-size: 1.4rem;
+     height: 500px;
+ }
+
+ .footerUL {
+     list-style-type: none;
+ }
+
+ .footerLI{
+     cursor: pointer;
+     font-size: 1rem;
+     margin: 10px 0;
+ }
